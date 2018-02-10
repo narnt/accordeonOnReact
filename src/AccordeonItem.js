@@ -10,7 +10,7 @@ export default class AccordeonItem extends Component {
 
     render() {
         const { isOpen } = this.state
-        return <li className = "main__menu main__menu__item"
+        return <li className = { isOpen ? "main__menu main__menu__item .menu__item__opened" : "main__menu main__menu__item" }
         onClick = { this.toggleOpen } > < p className = { isOpen ? "main__menu__item__p active" : "main__menu__item__p" } > { this.props.item.title } < /p> { this.getBody() } < /
         li >
     }

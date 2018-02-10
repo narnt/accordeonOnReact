@@ -3,8 +3,7 @@
     padding: 0;
 }
 
-
-/* @font-face {
+@font-face {
     font-family: FiraSans;
     src: url(FiraSans.ttf);
 }
@@ -12,7 +11,7 @@
 @font-face {
     font-family: FiraSansLight;
     src: url(FiraSansL.ttf);
-} */
+}
 
 .main {
     max-width: 460px;
@@ -26,13 +25,13 @@
     width: 216px;
     height: 88px;
     margin: auto;
-    /* background-image: url(logo.png); */
+    background-image: url(logo.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .main__menu {
-    /* font-family: FiraSans; */
+    font-family: FiraSans;
     font-size: 15px;
 }
 
@@ -66,37 +65,20 @@
 }
 
 .main__menu__item:hover .main__menu__item__p::after {
-    position: absolute;
-    right: 20px;
-    /* content: "▲"; */
-    color: #fff;
-}
-
-
-/* 
-.active .main__menu__item__p::after {
-    position: absolute;
-    right: 20px;
-    color: #fff;
-    background-color: #ff8663;
-    content: "▲";
-} */
-
-.active .main__menu__item__p::after,
-.main__menu__item:hover .main__menu__item__p::after {
     content: "▲";
     color: #fff;
 }
 
-.active .main__menu__item__p {
-    background-color: #ff8663;
+.active::after {
+    content: "▲";
 }
 
-.main__menu__item:nth-child(odd) .main__menu__item__p {
+.main__menu__item:nth-child(odd)>.main__menu__item__p {
     color: white;
     background-color: #696666;
 }
 
+.main__menu__item:nth-child(odd)>.main__menu__item__p:hover,
 .main__menu__item:hover .main__menu__item__p {
     background-color: #ff8663;
     color: white;
@@ -110,7 +92,7 @@
 .main__menu__item__submenu__item {
     padding-top: 7px;
     padding-left: 21px;
-    /* font-family: FiraSansLight; */
+    font-family: FiraSansLight;
 }
 
 @media all and (max-width: 420px) {
@@ -121,7 +103,7 @@
         display: block;
         width: 58px;
         height: 44px;
-        /* background: url(shape.png) no-repeat; */
+        background: url(shape.png) no-repeat;
         background-position: center;
     }
     .main__menu {

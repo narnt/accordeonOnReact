@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 // import AccordeonItem from './AccordeonItem'
 import ItemList from './ItemList'
 import './style.css'
